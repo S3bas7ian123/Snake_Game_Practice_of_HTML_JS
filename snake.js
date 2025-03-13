@@ -80,7 +80,49 @@ function runRightSnake() {
     snake.pop(); // remove the last element of snake using pop
 }
 
+// new function to manage keyboard input
+function isOppositeDirection(newDx, newDy) {
+   return dx === -newDx && dy === -newDy;
+}
 
+// changeDirection function, whit switch case logic 
+function changeDirection(e) {
+    // create constants for keyboard arrows (this numbers are  defined by standards dating back to the origins of computing)
+
+    const LEFT_KEY = 37; // left arrow ...
+    const RIGHT_KEY = 39; // right arrow ...
+    const UP_KEY = 38; // up arrow ...
+    const DOWN_KEY = 40; // down arrow ...
+
+    switch (e.keyCode) {
+        case LEFT_KEY:
+            if(!isOppositeDirection(-10, 0)) {
+                dx = -10;
+                dy = 0;
+            }
+            break;
+        case RIGHT_KEY:
+            if(!isOppositeDirection(10, 0)) {
+                dx = 10;
+                dy = 0;
+            }
+            break;
+        case UP_KEY:
+            if(!isOppositeDirection(0, -10)) {
+                dx = 0;
+                dy = -10
+            }
+            break;
+        case DOWN_KEY:
+            if(!isOppositeDirection(0, 10)) {
+                dx = 0;
+                dy = 10;
+            }
+            break;
+    }
+}
+// add an event listener for the keyboards events
+document.addEventListener('keydown', changeDirection);
 
 // call functions:
 drawSnakeOnScreen();
