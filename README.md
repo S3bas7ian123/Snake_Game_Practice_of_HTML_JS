@@ -4,3 +4,4 @@
 4) TODO: Font e stili vanno applicati coerntemente allo stile di gioco
 5) TODO: IMPORTANTE: quando lo snake sbatte sul bordo, far comparire messaggio per ricominciare da capo
 6) TODO: Funzioni aggiuntive + chicche
+7) TODO-IMPORTANT: Riscirvere + accuratamente il codice (cercare di semplificarlo per ulteriori update)
