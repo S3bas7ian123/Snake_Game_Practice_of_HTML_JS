@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Tektur:wght@400..900&display=swap');
+
+:root {
+    --BodyBackCol: rgb(156, 215, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Tektur", sans-serif;
+    background-color: var(--BodyBackCol);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#score {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 50px;
+}
