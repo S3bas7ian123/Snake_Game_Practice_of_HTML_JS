@@ -2,6 +2,7 @@
 
 :root {
     --BodyBackCol: rgb(156, 215, 255);
+    --linkCol: rgb(62, 143, 197);
 }
 
 * {
@@ -10,9 +11,25 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: "Tektur", sans-serif;
     background-color: var(--BodyBackCol);
+}
+
+.contLink {
+    background-color: aliceblue;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+a {
+    color: var(--linkCol);
+    text-decoration: none;
 }
 
 .container {
@@ -24,6 +41,7 @@ body {
 }
 
 #score {
+    margin-top: -100px;
     margin-bottom: 20px;
     text-align: center;
     font-size: 50px;

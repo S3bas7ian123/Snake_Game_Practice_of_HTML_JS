@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snake Game</title> 
-    <link rel="stylesheet" href="css/mainGame.css">
+    <title>Snake Game: THE GAME</title> 
+    <link rel="stylesheet" href="css/pagesStyles.css">
     <script src="js/snake.js" defer></script>
 </head>
-<body>
-    <a href="gameRules.html">Game Rules</a>
+<body style="overflow: hidden;"> <!-- we don't need a scrollbar -->
+    <div class="contLink">
+        <a href="gameRules.html">Return to rules</a>
+    </div>
     <div class="container">
         <div id="score">0</div>
         <canvas id="gameCanvas" width="500" height="500">&lt;</canvas>
